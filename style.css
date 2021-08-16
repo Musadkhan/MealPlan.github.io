@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Home{
+    background-image: url('Images/HomeBackground.png');
+    /* background-repeat: no-repeat;
+    background-position: center;
+    /* background-size:50% 50%; 
+    background-size: cover;  */ 
+    height: 100vh;
+    width:100%;
+    font-family: 'Roboto Slab', serif;
+}
+.Header{
+    background-image: url('Images/HomeHeaderBackground.png');
+    height: 15vh;
+    display: flex;
+}
+.Header img{
+    padding-left: 5%;;
+    padding-top: 2%;
+}
+.nav{
+    display: flex;
+    padding-top: 4%;
+    padding-left: 15%;
+    justify-content: space-between;
+    color:rgb(37, 150, 190);
+}
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.last{
+    padding-top: 1%;
+    /* border: 1px solid red; */
+    width: 30vw;
+    display: flex;
+    align-items:flex-end;
+ 
+    margin-left: auto;
+    margin-right: 2%;
+    margin-bottom: 1%;
+}
+.Order{
+    width: fit-content;
+    background-color: #2596be;
+    height: fit-content;
+    border-radius: 20%;
+    color: white;
+    padding:5px 30px;
+    margin-top: 3%;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+.last img{
+    height: 34%;
+    /* border: 1px solid red; */
+}
+
+.main{
+    display: flex;
+}
+.Left{
+    width: 50%;  
+    height: 85vh;
+    color: #2596be;
+}
+.Left img{
+    height: 70%;
+    margin-left: 20%;
+    margin-top: 7vh;
+}
+
+.Right{
+    width: 50vw;
+    height: 85vh;
+    /* border: 1px solid red; */
+    color:#ff7404;
+    font-size:5vh;
+    
+}
+.Right h1{
+    margin-top: 15vh;
+}
+.Right button{
+    height: auto;
+    padding: 8px;
+    border-radius: 15%;
+}
+.Right .FirstButton{
+    background-color:#2596be ;
+    cursor: pointer;
+}
+
+.Right .SecondButton{
+    opacity: 0.6;
+    border: 1px solid black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.SideBar{
+    
+    background-image: url('Images/HomeSide.png');
+    height: 20vh;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+}
+/* tr{
+    width: 80%;
+    height: 100%;
+}
+td{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+} */
+.SideBar h4{
+    font-size: small;
+    writing-mode: vertical-rl;
+    padding-left: 4vh;
+    padding-right: 2vh;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgs{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:100;
+    cursor: pointer;
+}
+.imgs h6{
+    font-weight:lighter;
+    font-size:medium;
+}
+
+
+@media screen and (max-width: 1150px){
+    .main{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
