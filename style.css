@@ -80,9 +80,12 @@
 .Right{
     width: 50vw;
     height: 85vh;
-    /* border: 1px solid red; */
+
     color:#ff7404;
     font-size:5vh;
+    display: flex;
+    flex-direction: column;
+
     
 }
 .Right h1{
@@ -106,13 +109,17 @@
 }
 
 .SideBar{
-    
+    width: 100%;
     background-image: url('Images/HomeSide.png');
     height: 20vh;
     color: white;
+    margin-top: 30px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: flex;
+    align-self:flex-end ;
+    transition:2s;
+
 }
 /* tr{
     width: 80%;
@@ -141,6 +148,7 @@ td{
     align-items: center;
     font-weight:100;
     cursor: pointer;
+   
 }
 .imgs h6{
     font-weight:lighter;

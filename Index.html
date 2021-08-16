@@ -47,8 +47,8 @@
                 <button class="SecondButton">LEARN MORE</button></center>
 
                 <br>
-                <div class="SideBar">
-                    <h4><center>MEAL OPTION </center></h4>
+                <div class="SideBar" id="sidebarid">
+                    <h4 onclick="hide()"><center>MEAL OPTION </center></h4>
                     
                     <!-- <tr>
                         <td><img src="Images/HomePlate1.png" alt="">Lorem ipsum, dolor sit amet</td>
@@ -57,12 +57,12 @@
                         <td><img src="Images/HomePlate1.png" alt="">Lorem ipsum, dolor sit amet</td>
                     </tr> -->
 
-                    <div class="imgs">
+                    <div class="imgs" id="imgid">
                             <center><h6><img src="Images/HomePlate1.png" alt=""><br>Lorem ipsum, dolor sit amet</h6></center>
                             <center><h6><img src="Images/HomePlate2.png" alt=""><br>Lorem ipsum, dolor sit amet</h6></center>
                             <center><h6><img src="Images/HomePlate3.png" alt=""><br>Lorem ipsum, dolor sit amet</h6></center>
                             <center><h6><img src="Images/HomePlate1.png" alt=""><br>Lorem ipsum, dolor sit amet</h6></center>
-                            <center><h6><img src="Images/Arrow.png" alt=""><br></h6></center>
+                            <center><h6><img onclick="show()" src="Images/Arrow.png" alt=""><br></h6></center>
                     </div>
 
                 </div>
@@ -71,4 +71,20 @@
     </div>
     
 </body>
+<script>
+    function show(){
+
+        document.getElementById("imgid").style.display="none";
+        document.getElementById("sidebarid").style.width="10%"
+       
+
+//  document.getElementsByClassName("imgs").style.display="none";
+// dishs.style.display="none";
+
+}
+function hide(){
+    document.getElementById("imgid").style.display="flex";
+        document.getElementById("sidebarid").style.width="100%"
+}
+</script>
 </html>
