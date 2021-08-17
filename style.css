@@ -185,7 +185,7 @@ td{
     
     .Left{
         max-width: 100%;
-        height: 55%;
+        height: 50%;
         width: 100vh;
         /* display: flex;
         flex-direction: column;
@@ -210,17 +210,17 @@ td{
 
     .Right{
         max-width: 100%;
-        height: 45%;
+        height: 50%;
         width: 100vh;    
-        display: flex;
+        /* display: flex;
         flex-direction: row;
-        /* border: 1px solid red; */
+        border: 1px solid red; */
     }
     .opt{
         width: 90%;
-        height: 70%;
-        display: flex;
-        flex-direction: column;
+        height: 60vh;
+        /* display: flex;
+        flex-direction: column; */
     }
     .Right h1{
         font-size: 100%;
@@ -228,14 +228,44 @@ td{
     }
 
     .SideBar{
-        height: 30%;
-        width: 100%;
+        height: auto;
+        width:100vw;
         max-width: 100vw;
     }
+    /* .SideBar h4{
+        padding-left: 0;
+        padding-right: 0;
+    } */
 
     /* .imgs{
         display: none;
     } */
+}
+
+
+@media screen and (max-width: 550px){
+    *{
+        box-sizing: border-box;
+    }
+    .imgs{
+        
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .column {
+        
+      }
+    .imgs h6{
+        border: 1px solid black;
+        /* width: 50%; */
+        float: left;
+        width: 50%;
+        padding: 5px;
+    }
+    .arrow{
+        display: none;
+    }
 }
 
 
