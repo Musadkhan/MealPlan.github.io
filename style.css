@@ -322,6 +322,22 @@ td{
     margin-top: 10%;
 }
 
+.BookButton{
+    border: 2px solid black;
+    width: 70%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40%;
+    position:relative;
+    display: none;
+    z-index: 99;
+}
+
+
+
+
 
 @media screen and (max-width: 1000px){
     .SecondPhase{
@@ -380,10 +396,287 @@ td{
 
 }
 
+/* --------------------------------Third Phase------------------------------------ */
+
+.ThirdPhase{
+    height: 100vh;
+    background-image: url('Images/HomeBackground.png');
+    /* border: 1px solid red; */
+    display: flex;
+    color: rgb(37, 150, 190);
+}
+.ThirdRight{
+    /* border: 5px solid black; */
+    height:100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ThirdRight h1{
+    color: #ff7404;
+    font-size: 5vw;
+}
+.ThirdDishes{
+    display: flex;
+    padding: 40px 0;
+}
+
+.ThirdDishes img{
+    /* border: 1px solid red; */
+    width: 15vw;
+}
+.ThirdDishes .FirstDish{
+    /* border: 1px solid blue; */
+    position: relative;
+    margin-left: 40px;
+    /* width: 50%; */
+}
+.ThirdDishes .SecondDish{
+    position: relative;
+    /* border: 1px solid violet; */
+    margin-left: 60px;
+}
+
+
+.ThirdDishes button{
+    z-index: 999;
+    position:absolute;
+    width: 50%;
+    height: 30%;
+    top: 85%;
+    left: -10%;
+    border-radius: 5px;
+    background-color: rgb(37, 150, 190);
+    color: white;
+    cursor: pointer;
+    /* bottom: 1px; */
+}
+
+
+.ThirdLeft{
+    /* border: 10px solid blue; */
+    height:100%;
+    width: 50%;
+    display: flex;
+    /* justify-content: left; */
+    /* align-self:flex-start; */
+    align-items: center;
+}
+.ThirdLeft img{
+    height: 80%;
+    width: 60%;
+    /* align-self: flex-end; */
+    padding-left: 30%;
+
+}
+
+@media screen and (max-width:1100px){
+    .ThirdLeft img{
+        height: 60%;
+        width: 80%;
+        padding-left: 10%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .ThirdPhase{
+        height: 90vh;
+    }
+    .ThirdPhase .ThirdRight{
+        font-size: 80%;
+        padding-right: 10px;
+    }
+
+    .ThirdPhase .ThirdRight h1{
+        font-size: 250%;
+    }
+
+    .ThirdDishes{
+        display: flex;
+        flex-direction:column;
+        /* border: 1px solid red; */
+    }
+    .ThirdDishes .FirstDish{
+        /* border: 1px solid blue; */
+        width: 70%;
+        height: 90%;
+        margin-bottom: 30px;
+    }
+    .ThirdDishes .SecondDish{
+        /* border: 1px solid blue; */
+        width: 70%;
+        margin-left: 20%;
+    }
+    .ThirdDishes img{
+        width: 100%;
+        height: 100%;
+    }
+    .ThirdDishes button{
+        width: 80%;
+        height: 40%;
+    }
+}
+/* ------------------------------------------------------------------------------- */
+
+.ForthPhase{
+    height: 110vh;
+    background-image: url('Images/ForthBackground.png');
+    /* width: 100vw; */
+    display: flex;
+}
+
+.ForthRight{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.ForthRight img{
+    height: 80%;
+    /* display: flex; */
+    margin-left: 10%;
+}
+.ForthLeft{
+    /* border: 1px solid red; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding-left: 5%;
+    justify-content: center;
+}
+
+.ForthLeft h1{
+    font-size: 4vw;
+    color: #ff7404;
+    margin:15px 0 35px 0;
+}
+.FirstTwo{
+    margin-bottom: 10vh;
+    /* border: 1px solid red; */
+    /* position: relative; */
+    display: flex;
+}
+.FirstTwo .one{
+    width: 40%;
+    margin-right: 10%;
+    position: relative;
+}
+.FirstTwo .two{
+    width: 40%;
+    position:relative
+}
+.FirstTwo .two button{
+    /* border: 3px solid black; */
+}
+
+.SecondTwo{
+    display: flex;
+}
+
+.SecondTwo .one{
+    width: 40%;
+    margin-right: 10%;
+    position: relative;
+}
+.SecondTwo .two{
+    width: 40%;
+    position: relative;
+}
 
 
 
 
+.ForthLeft button{
+    z-index: 999;
+    position:absolute;
+    width: 50%;
+    height: 30%;
+    top: 85%;
+    left: 0;
+    border-radius: 10px;
+    background-color: rgb(37, 150, 190);
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1500px){
+
+    .ForthRight img{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:1200px){
+
+    
+    .ForthRight{
+        width: 40%;
+    }
+    .ForthLeft{
+        width: 60%;
+        /* margin-bottom: 20vh; */
+        /* margin-bottom: 10vh; */
+        height: 80%;
+    }
+}
+
+@media screen and (max-width:1200px){
+
+    .ForthPhase{
+        height: 60vh;
+    }
+    .ForthRight{
+        display: none;
+    }
+    .ForthLeft{
+        width: 90%;
+    }
+    .ForthLeft .FirstTwo{
+        /* border: 1px solid red; */
+        width: 100%;
+    }
+    /* .ForthLeft .FirstTwo .one{
+
+    } */
+}
+
+@media screen and (max-width:800px){
+
+    .ForthLeft h1{
+        font-size: 10vw;
+    }
+    .FirstTwo .one{
+        /* border: 1px solid violet; */
+        width: 45%;
+    }
+
+    .FirstTwo img{
+        width: 100%;
+    }
+    .FirstTwo .two{
+        /* border: 1px solid blue; */
+        width: 45%;
+    }
 
 
+    .SecondTwo img{
+        width: 100%;
+    }
+    .SecondTwo .one{
+        width: 45%;
+    }
+    .SecondTwo .two{
+        width: 45%;
+    }
 
+}
+@media screen and (max-width:450px){
+    .ForthLeft button{
+        width:70%;
+        
+    }
+}
